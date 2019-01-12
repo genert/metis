@@ -9,7 +9,7 @@ class EventCollection {
 	}
 
 	public getContent(): string {
-		return this._events.reduce((content: string, currentEvent: Event) => content += currentEvent.getSize(), '');
+		return this._events.reduce((content: string, currentEvent: Event) => content += currentEvent.getContent(), '');
 	}
 
 	public reset(): void {

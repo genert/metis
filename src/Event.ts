@@ -39,6 +39,10 @@ export default class Event {
         });
     }
 
+    public getContent(): string {
+        return this._content;
+    }
+
     public getSize(): number {
         return this._content.length;
     }
