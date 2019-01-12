@@ -1,0 +1,8 @@
+# Dont add npm-debug.log
+npm-debug.log
+npm-*.log
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+node_modules

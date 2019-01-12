@@ -5,7 +5,7 @@ import { createQueryString } from "./Utils";
 export default class Api {
     public constructor(private _config: ApiConfigurationInterface) {}
 
-    public submitEvents(collection: EventCollection) {
+    public submitEvents(collection: EventCollection): Promise<any> {
         return new Promise((resolve, reject) => {
             const request = {
                 method: this._config.method ? this._config.method : 'POST',
