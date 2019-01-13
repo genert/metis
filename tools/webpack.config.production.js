@@ -31,8 +31,8 @@ const productionConfig = merge(webpackConfig, {
         // There will be one main bundle, and one file per asynchronous chunk.
         filename: '[name].js',
 
-        library: 'Metis',
-    
+        library: 'MetisData',
+
         libraryTarget: 'window',
 
         // We inferred the "public path" (such as / or /my-project) from homepage.

@@ -1,8 +1,8 @@
 {
-  "name": "metis",
+  "name": "metis-data",
   "version": "1.0.0",
-  "description": "Analytics",
-  "main": "index.js",
+  "description": "README.md",
+  "main": "dist/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production node ./tools/scripts/build.js",
     "test": "jest",
