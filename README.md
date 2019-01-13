@@ -19,7 +19,7 @@
 [Download the latest release](https://raw.githubusercontent.com/Genert/metis-data/master/dist/main.js) or install with npm.
 
 ```sh
-npm install metis --save
+npm install metis-data --save
 ```
 
 #### Step 2: Reference
@@ -55,18 +55,34 @@ analytics.addEvent({
 
 With default settings, following event will be sent to configured host as POST request within default buffer time (2s).
 
-The payload will be following:
+The payload will be array of event objects converted to a JSON string as following:
+
 ```
 [
   {
     "id":"b9e601f6-462a-413b-af98-3f5e28fe2f12",
-    "name":"impression",
+    "name":"your-event-name",
     "timestamp":1547411367556,
     "data":{
       "something":"mock-data"
     }
   }
 ]
+```
+
+Each event has unique RFC4122 version 4 compliant UUID by default, which can be overridden by your prefered id.
+
+Also, timestamp is added when the event was added to the event collection. This can be also overriden as following example shows:
+
+```javascript
+analytics.addEvent({
+  id: 'your-id', // Must be string
+  name: 'your-event-name',
+  timestamp: Date.now(),
+  data: {
+    // Data payload
+  }
+});
 ```
 
 ## Options
