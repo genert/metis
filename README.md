@@ -70,7 +70,7 @@ The payload will be array of event objects converted to a JSON string as followi
 ]
 ```
 
-Each event has unique RFC4122 version 4 compliant UUID by default, which can be overridden by your prefered id.
+Each event has unique RFC4122 version 4 compliant UUID by default, which can be overridden with your preferred id.
 
 Also, timestamp is added when the event was added to the event collection. This can be also overriden as following example shows:
 
