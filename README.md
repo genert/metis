@@ -103,6 +103,22 @@ new MetisData({
 });
 ```
 
+### `options.api.host` (required)
+
+> Describes configured host, where payload is sent.
+
+### `options.api.method`
+
+> Describes HTTP request method to the configured host.
+>
+> **Default:** *(string)* `POST`.
+
+### `options.api.query`
+
+> Describes list of query params that will be appended to the host url.
+>
+> **Default:** *(object)* `{}`.
+
 ### `options.bufferTime`
 
 > Describes timespan in what event collection is gathered and sent to configured host.
