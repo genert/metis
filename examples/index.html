@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../dist/main.js"></script>
+        <script type="text/javascript">
+        const analytics = new window.Metis.default({
+            api: {
+                host: 'https://api.test.solcredito.es/api/v1/form_field_action',
+            },
+        });
+
+        analytics.addEvent({
+            name: 'impression',
+            data: {
+                action_type: 'shown',
+                form_field_name: 'application_period',
+                impression_hash: '625bdecd-f59e-49c8-984d-1c5160233405',
+            },
+        });
+
+        console.log(analytics.getStats());
+
+        analytics.addEvent({
+            name: 'impression',
+            data: {
+                action_type: 'shown',
+                form_field_name: 'application_period',
+                impression_hash: '625bdecd-f59e-49c8-984d-1c5160233405',
+            },
+        });
+
+        analytics.addEvent({
+            name: 'impression',
+            data: {
+                action_type: 'shown',
+                form_field_name: 'application_period',
+                impression_hash: '625bdecd-f59e-49c8-984d-1c5160233405',
+            },
+        });
+
+        analytics.addEvent({
+            name: 'impression',
+            data: {
+                action_type: 'shown',
+                form_field_name: 'application_period',
+                impression_hash: '625bdecd-f59e-49c8-984d-1c5160233405',
+            },
+        });
+
+        console.log(analytics.getStats());
+        </script>
+    </head>
+</html>

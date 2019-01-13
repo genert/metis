@@ -1,4 +1,4 @@
-import { createQueryString, generateUUIDV4 } from '../src/Utils';
+import { createQueryString, generateUUIDV4 } from '../src/utils';
 import * as expect from 'unexpected';
 
 describe('utils', () => {

@@ -29,9 +29,6 @@ measureFileSizesBeforeBuild(config.applicationBuild)
         // if you're in it, you don't end up in Trash
         fs.remove(config.applicationBuild);
 
-        // Merge with the public folder
-        copyPublicFolder();
-
         // Start the webpack build
         return build(previousFileSizes);
     })

@@ -49,7 +49,7 @@ module.exports = {
 
     module: {
         rules: [{
-            test: /\.(ts)$/,
+            test: /\.ts$/,
             include: config.src,
             use: [
                 {
